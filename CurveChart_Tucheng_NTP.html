@@ -5,30 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curve Chart_新北市土城區</title>
     <style>
-        /* Reset some default styles */
+        /* Reset styles */
         body, html {
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
+            background-color: #f9f9f9;
             color: #333;
         }
 
-        /* Header styling */
-        h1 {
+        /* Header styles */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 20px;
             text-align: center;
-            margin: 20px 0;
-            color: #4a90e2;
         }
 
-        /* Container for iframe */
-        .iframe-container {
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main content area */
+        .content {
+            padding: 20px;
             max-width: 1200px;
             margin: 0 auto;
-            padding: 10px;
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         /* Responsive iframe */
@@ -36,34 +60,27 @@
             width: 100%;
             height: 600px;
             border: none;
-            border-radius: 8px;
-        }
-
-        /* Footer styling */
-        footer {
-            text-align: center;
-            margin: 20px 0;
-            font-size: 14px;
-            color: #777;
-        }
-
-        footer a {
-            color: #4a90e2;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
 <body>
-    <h1>這是新北市土城區 A31 至 A33 的 Curve Chart，呈現新北土城的高齡人口標籤。</h1>
-    <div class="iframe-container">
-        <iframe src="https://plotdb.io/v/chart/37118" allowfullscreen="true"></iframe>
+
+    <!-- Header -->
+    <header>
+        <h1>這是新北市土城區 A31 至 A33 的 Curve Chart，呈現新北土城的高齡人口標籤。</h1>
+    </header>
+
+    <!-- Main Content -->
+    <div class="content">
+        <iframe src="https://github.com/anan442/Data_design/raw/main/CurveChart_Tucheng_NTP.html"></iframe>
     </div>
+
+    <!-- Footer -->
     <footer>
-        Made by <a href="https://github.com/anan442" target="_blank">anan442</a>
+        Made with ❤️ by <a href="https://github.com/anan442" target="_blank">anan442</a>
     </footer>
+
 </body>
 </html>
