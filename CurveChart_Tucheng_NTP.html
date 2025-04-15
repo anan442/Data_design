@@ -5,15 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curve Chart_新北市土城區</title>
     <style>
-      h1 {
-          text-align: center;
-          margin: 20px 0;
-          color: #4a90e2;
-      }
+        /* Reset some default styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        /* Header styling */
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+            color: #4a90e2;
+        }
+
+        /* Container for iframe */
+        .iframe-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 10px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Responsive iframe */
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+            border-radius: 8px;
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 14px;
+            color: #777;
+        }
+
+        footer a {
+            color: #4a90e2;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
     <h1>這是新北市土城區 A31 至 A33 的 Curve Chart，呈現新北土城的高齡人口標籤。</h1>
-    <iframe src="https://plotdb.io/v/chart/37118" width="100%" height="600px" allowfullscreen="true" frameborder="0"></iframe>
+    <div class="iframe-container">
+        <iframe src="https://plotdb.io/v/chart/37118" allowfullscreen="true"></iframe>
+    </div>
+    <footer>
+        Made by <a href="https://github.com/anan442" target="_blank">anan442</a>
+    </footer>
 </body>
 </html>
