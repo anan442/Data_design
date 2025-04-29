@@ -1,27 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charts Display</title>
+    <title>新北市113年12月人口統計圖表－65歲以上</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
-        iframe {
+        h1 {
+            margin-top: 20px;
+            font-size: 26px;
+            color: #444;
+        }
+        .chart-section {
+            width: 90%;
+            max-width: 1200px;
             margin: 20px 0;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .chart-section h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #555;
+        }
+        iframe {
+            width: 100%;
+            height: 600px;
             border: none;
+            border-radius: 4px;
         }
     </style>
 </head>
 <body>
-    <h1>Chart Display</h1>
-    <iframe src="https://plotdb.io/v/chart/37330" width="100%" height="600px" allowfullscreen="true"></iframe>
-    <iframe src="https://plotdb.io/v/chart/37335" width="100%" height="600px" allowfullscreen="true"></iframe>
+    <h1>新北市65歲以上人口統計圖表</h1>
+    
+    <div class="chart-section">
+        <h2>圖表一：新北市65歲以上人口分布</h2>
+        <iframe src="https://plotdb.io/v/chart/37330" allowfullscreen="true"></iframe>
+    </div>
+    
+    <div class="chart-section">
+        <h2>圖表二：新北市各區65歲以上人口比例</h2>
+        <iframe src="https://plotdb.io/v/chart/37335" allowfullscreen="true"></iframe>
+    </div>
 </body>
 </html>
