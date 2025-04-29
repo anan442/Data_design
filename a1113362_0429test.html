@@ -9,11 +9,11 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
+            background-color: #f0f8ff; /* 淺藍色背景 */
             color: #333;
         }
         header {
-            background-color: #4caf50;
+            background-color: #007acc; /* 深藍色標題背景 */
             color: white;
             padding: 20px;
             text-align: center;
@@ -22,16 +22,17 @@
             padding: 20px;
         }
         section {
-            background-color: #fff;
+            background-color: #ffffff;
             margin: 20px auto;
             padding: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
             max-width: 1200px;
+            border-left: 5px solid #007acc; /* 左側藍色邊框 */
         }
         section h2 {
             margin-top: 0;
-            color: #4caf50;
+            color: #005b99; /* 標題深藍色 */
         }
         iframe {
             width: 100%;
@@ -45,6 +46,9 @@
         ul li {
             margin-bottom: 10px;
         }
+        strong {
+            color: #005b99; /* 重點文字深藍色 */
+        }
     </style>
 </head>
 <body>
@@ -53,29 +57,33 @@
     </header>
 
     <main>
-        
+        <!-- 圖表一 -->
         <section>
             <h2>圖表一：新北市65歲以上人口分布</h2>
             <iframe src="https://plotdb.io/v/chart/37330" allowfullscreen="true"></iframe>
         </section>
 
+        <!-- 圖表二 -->
         <section>
             <h2>圖表二：新北市各區65歲以上人口比例</h2>
             <iframe src="https://plotdb.io/v/chart/37335" allowfullscreen="true"></iframe>
         </section>
         
+        <!-- 人口結構 -->
         <section>
             <h2>人口結構</h2>
             <p>65至79歲人口約 <strong>636,279人</strong>，佔整體高齡人口 <strong>82.79%</strong></p>
             <p>80歲以上人口約 <strong>132,213人</strong>，佔整體高齡人口 <strong>17.21%</strong></p>
         </section>
 
+        <!-- 圖表分析 -->
         <section>
             <h2>圖表分析</h2>
             <p><strong>人口最多地區：</strong>板橋區、高機能生活圈（如新店、中和、新莊）高齡人口比例高，特別集中於65-74歲族群，顯示這些區域具備醫療便利性、交通網絡及社區照顧基礎。</p>
             <p><strong>人口較少地區：</strong>平溪區、烏來區、雙溪區等地，因地理偏遠、交通不便與年輕人口外移，整體高齡人口數偏低，但這也造成老化程度更嚴重，需特別強化基礎照護資源。</p>
         </section>
 
+        <!-- 未來可能的準備方向 -->
         <section>
             <h2>未來可能的準備方向</h2>
             <ul>
@@ -91,8 +99,6 @@
                 </li>
             </ul>
         </section>
-
-
     </main>
 </body>
 </html>
