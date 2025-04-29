@@ -14,10 +14,58 @@
             color: #333;
         }
         header {
-            background-color: #007acc; /* 深藍色標題背景 */
+            background: linear-gradient(135deg, #007acc, #005b99); /* 漸層背景 */
             color: white;
-            padding: 20px;
+            padding: 30px 20px;
             text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        header::before {
+            content: "";
+            position: absolute;
+            top: -50px;
+            left: -50px;
+            width: 200px;
+            height: 200px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            animation: float 6s infinite ease-in-out;
+        }
+        header::after {
+            content: "";
+            position: absolute;
+            bottom: -50px;
+            right: -50px;
+            width: 200px;
+            height: 200px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            animation: float 10s infinite ease-in-out;
+        }
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(20px);
+            }
+        }
+        header h1 {
+            font-size: 28px;
+            margin: 0;
+            font-weight: bold;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+        }
+        header p {
+            font-size: 16px;
+            margin: 10px 0 0;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+        header .icon {
+            font-size: 50px;
+            margin-bottom: 15px;
+            display: inline-block;
         }
         main {
             padding: 20px;
@@ -55,7 +103,13 @@
         @media (max-width: 768px) {
             header {
                 font-size: 18px;
-                padding: 15px;
+                padding: 20px 15px;
+            }
+            header h1 {
+                font-size: 24px;
+            }
+            header p {
+                font-size: 14px;
             }
             section {
                 padding: 15px;
@@ -68,7 +122,13 @@
         @media (max-width: 480px) {
             header {
                 font-size: 16px;
-                padding: 10px;
+                padding: 15px 10px;
+            }
+            header h1 {
+                font-size: 20px;
+            }
+            header p {
+                font-size: 12px;
             }
             section {
                 padding: 10px;
@@ -81,7 +141,9 @@
 </head>
 <body>
     <header>
-        <h1>新北市113年12月高齡人口趨勢分析報告（65歲以上）</h1>
+        <div class="icon">🧓</div>
+        <h1>新北市113年12月高齡人口趨勢分析報告</h1>
+        <p>聚焦65歲以上人口變化，洞察未來可能的挑戰與機遇</p>
     </header>
 
     <main>
