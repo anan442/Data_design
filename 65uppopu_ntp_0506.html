@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新北市113年12月人口統計圖表－65歲以上</title>
+    <style>
+        /* 全域樣式 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* 淺藍色背景 */
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #007acc, #005b99); /* 漸層背景 */
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        header::before {
+            content: "";
+            position: absolute;
+            top: -50px;
+            left: -50px;
+            width: 200px;
+            height: 200px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            animation: float 6s infinite ease-in-out;
+        }
+        header::after {
+            content: "";
+            position: absolute;
+            bottom: -50px;
+            right: -50px;
+            width: 200px;
+            height: 200px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            animation: float 10s infinite ease-in-out;
+        }
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(20px);
+            }
+        }
+        header h1 {
+            font-size: 28px;
+            margin: 0;
+            font-weight: bold;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+        }
+        header p {
+            font-size: 16px;
+            margin: 10px 0 0;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+        header .icon {
+            font-size: 50px;
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            background-color: #ffffff;
+            margin: 20px auto;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            max-width: 1200px;
+            border-left: 5px solid #007acc; /* 左側藍色邊框 */
+        }
+        section h2 {
+            margin-top: 0;
+            color: #005b99; /* 標題深藍色 */
+        }
+        iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+            border-radius: 4px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        strong {
+            color: #005b99; /* 重點文字深藍色 */
+        }
+
+        /* 響應式設計 */
+        @media (max-width: 768px) {
+            header {
+                font-size: 18px;
+                padding: 20px 15px;
+            }
+            header h1 {
+                font-size: 24px;
+            }
+            header p {
+                font-size: 14px;
+            }
+            section {
+                padding: 15px;
+            }
+            iframe {
+                height: 300px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                font-size: 16px;
+                padding: 15px 10px;
+            }
+            header h1 {
+                font-size: 20px;
+            }
+            header p {
+                font-size: 12px;
+            }
+            section {
+                padding: 10px;
+            }
+            iframe {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>新北市 113 年 12 月高齡人口趨勢分析報告</h1>
+        <p>聚焦 65 歲以上人口變化，洞察未來可能的挑戰與機遇</p>
+    </header>
+
+    <main>
+        <!-- 圖表一 -->
+        <section>
+            <h2>新北市 65 歲至 79 歲人口分布圖</h2>
+            <iframe src="https://plotdb.io/v/chart/37330" allowfullscreen="true"></iframe>
+        </section>
+
+        <!-- 圖表二 -->
+        <section>
+            <h2>新北市各區 80 歲以上人口比例圖</h2>
+            <iframe src="https://plotdb.io/v/chart/37335" allowfullscreen="true"></iframe>
+        </section>
+        
+        <!-- 人口結構 -->
+        <section>
+            <h2>人口結構</h2>
+            <p>65至79歲人口約 <strong>636,279人</strong>，佔整體高齡人口 <strong>82.79%</strong></p>
+            <p>80歲以上人口約 <strong>132,213人</strong>，佔整體高齡人口 <strong>17.21%</strong></p>
+        </section>
+
+        <!-- 圖表分析 -->
+        <section>
+            <h2>圖表分析</h2>
+            <p><strong>人口最多地區：</strong>板橋區、高機能生活圈（如新店、中和、新莊）高齡人口比例高，特別集中於 65-74 歲族群，顯示這些區域具備醫療便利性、交通網絡及社區照顧基礎。</p>
+            <p><strong>人口較少地區：</strong>平溪區、烏來區、雙溪區等地，因地理偏遠、交通不便與年輕人口外移，整體高齡人口數偏低，但這也造成老化程度更嚴重，需特別強化基礎照護資源。</p>
+        </section>
+
+        <!-- 未來可能的準備方向 -->
+        <section>
+            <h2>未來可能的準備方向</h2>
+            <ul>
+                <li><strong>超高齡照護準備</strong>
+                    <ul>
+                        擴大社區整合型服務中心、日間照顧中心等長照資源
+                    </ul>
+                </li>
+                <li><strong>偏鄉照護</strong>
+                    <ul>
+                        設立巡迴醫療隊，解決烏來、雙溪等地高齡者就醫不便問題
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
